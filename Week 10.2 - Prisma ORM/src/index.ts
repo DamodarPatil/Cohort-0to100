@@ -25,7 +25,7 @@ const insertUser = async (
   });
   console.log(response);
 };
-insertUser("damodar3@gmail.com", "password", "Damodar", "Patil");
+insertUser("damodar4@gmail.com", "password", "Damodar", "Patil");
 
 interface UpdateParams {
   firstName: string;
