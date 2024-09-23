@@ -36,15 +36,16 @@ const updateUser = async (
   email: string,
   { firstName, lastName }: UpdateParams
 ) => {
-  prisma.user.update({
+  const response = await prisma.user.update({
     where: { email },
     data: {
       firstName,
       lastName,
     },
   });
+  console.log(response);
 };
 updateUser("damodar@gmail.com", {
-  firstName: "john",
-  lastName: "due",
+  firstName: "Moon",
+  lastName: "Due",
 });
